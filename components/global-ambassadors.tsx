@@ -7,37 +7,37 @@ const GlobalAmbassadors = () => {
       name: "Wizkid",
       title: "Starboy",
       description: "Grammy-winning icon known for global hits like 'Essence'",
-      imageUrl: "/images/wizkid.jpg"
+      imageUrl: "/images/wizkid.JPG"
     },
     {
       name: "Burna Boy",
       title: "African Giant",
       description: "Grammy winner who's taken Afrofusion to international heights",
-      imageUrl: "/images/burna.jpg"
+      imageUrl: "/images/burna.JPG"
     },
     {
       name: "Tems",
       title: "Leading Voice",
       description: "Soulful vocalist featured on global hits and Grammy-recognized",
-      imageUrl: "/images/tems.jpg"
+      imageUrl: "/images/tems.JPG"
     },
     {
       name: "Davido",
       title: "30BG",
       description: "Influential star known for anthems that bridge continents",
-      imageUrl: "/images/davido.jpg"
+      imageUrl: "/images/davido.JPG"
     },
     {
       name: "Tiwa Savage",
       title: "African Bad Girl",
       description: "Queen of Afrobeats with international recognition",
-      imageUrl: "/images/tiwa.jpg"
+      imageUrl: "/images/tiwa.JPG"
     },
     {
       name: "Rema",
       title: "Afrorave Pioneer",
       description: "Young innovator behind global hit 'Calm Down'",
-      imageUrl: "/images/rema.jpg"
+      imageUrl: "/images/rema.JPG"
     }
   ];
 
