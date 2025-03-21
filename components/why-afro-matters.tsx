@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react";
 const WhyAfrobeatsMatters = () => {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: (i) => ({
+    visible: (i:any) => ({
       opacity: 1,
       y: 0,
       transition: { delay: 0.1 * i, duration: 0.6 }
