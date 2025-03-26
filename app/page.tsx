@@ -15,8 +15,9 @@ import SiteFooter from "@/components/site-footer";
 import GalleryHomeSection from "@/components/gallery-home-section";
 import GalleryHome2Section from "@/components/gallery-home2-section";
 import GalleryHome3Section from "@/components/gallery-home3-section";
-import AMSExpectations from "@/components/panel-discussion";
-import AMSExpectations2 from "@/components/panel-discussion-new";
+import GalleryHome4Section from "@/components/gallery-home4-section";
+// import AMSExpectations from "@/components/panel-discussion";
+import AMSExpectations from "@/components/panel-discussion-new";
 import AfrobeatsSection from "@/components/what-is-afro";
 import WhyAfrobeatsMatters from "@/components/why-afro-matters";
 import GlobalAmbassadors from "@/components/global-ambassadors";
@@ -61,14 +62,15 @@ export default function Component() {
           {/* Hero Section */}
           <HeroSection />
 
+          {/* <ExampleSection /> */}
           {/* Example Section */}
           <AfrobeatsSection/>
           <YoutubeSection />
           {/* Youtube Section */}
           {/* <AMSExpectations/> */}
-          <AMSExpectations2 />
-          <ExampleSection />
+          <AMSExpectations />
           {/* <ExampleSection2 /> */}
+          <GalleryHome4Section/>
           <GalleryHomeSection/>
           <GalleryHome2Section/>
           <GalleryHome3Section/>

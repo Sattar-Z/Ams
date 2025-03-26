@@ -1,49 +1,105 @@
 import React from 'react';
 import Image from 'next/image';
+import { motion } from "framer-motion";
 
-const AMSExpectations2 = () => {
+const AMSExpectations = () => {
   const sections = [
     {
       id: 1,
-      image: "/images/pans1.png",
-      alt: "Panels Discussions at AMS"
+      image: "/images/pan3.jpeg",
+      icon: "/images/chat.svg",
+      alt: "Panels Discussions at AMS",
+      title: "PANELS DISCUSSIONS",
+      color: "bg-yellow-600",
+      description: "Join us for exclusive discussions with the top minds in the Afrobeats industry. Connect with artist managers, label executives, music business strategists, and entertainment lawyers shaping the future of the genre."
     },
     {
       id: 2,
-      image: "/images/pans2.png",
-      alt: "Interviews at AMS"
+      image: "/images/pan1.jpeg",
+      icon: "/images/int.svg",
+      alt: "Interviews at AMS",
+      title: "INTERVIEWS",
+      color: "bg-teal-300",
+      description: "Dive into exclusive interviews and insights from industry leaders, guest speakers, and artist managers. Explore strategies for artist development, royalty collection, and global market expansion."
     },
     {
       id: 3,
-      image: "/images/pans3.png",
-      alt: "Keynote Presentations at AMS"
+      image: "/images/pan2.jpeg",
+      icon: "/images/speak.svg",
+      alt: "Keynote Presentations at AMS",
+      title: "KEYNOTE SPEAKERS",
+      color: "bg-red-600",
+      description: "Learn from top industry leaders who will share expertise on Afrobeats. Gain insights into artist development, record label strategies, monetization, sync licensing, and music industry legal frameworks."
     }
   ];
 
   return (
-    <section className="w-full bg-black border-b border-white">
-      <div className="w-full py-12">
-        <h1 className="text-4xl sm:text-6xl font-bold text-center text-white mb-12">
-          WHAT TO EXPECT AT AMS!
-        </h1>
-        <div className="space-y-4 sm:space-y-8">
-          {sections.map((section) => (
-            <div
-              key={section.id}
-              className="relative w-full h-[160px] sm:h-[260px] md:h-[600px]"
-            >
-              <Image
-                src={section.image}
-                alt={section.alt}
-                fill
-                quality={100}
-                priority={section.id === 1}
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw,
-                  (max-width: 1200px) 100vw,
-                  100vw"
-              />
-            </div>
+    <section className="bg-black text-white py-12 md:py-16">
+       <motion.h2
+            className="text-center mb-20 text-4xl sm:text-6xl font-extrabold"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            WHAT TO EXPECT AT AMS?
+          </motion.h2>
+          <br />
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
+          {sections.map((section, index) => (
+            <React.Fragment key={section.id}>
+              {index % 2 === 0 ? (
+                <>
+                  <div className={`flex flex-col justify-center p-6 md:p-8 ${section.color} rounded-lg text-black order-1 md:order-none`}>
+                    <div className="flex justify-center mb-4 md:mb-6">
+                      <Image
+                        src={section.icon}
+                        alt={`${section.title} Icon`}
+                        width={60}
+                        height={60}
+                        className="w-16 h-16 md:w-20 md:h-20"
+                      />
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4">{section.title}</h2>
+                    <p className="text-base md:text-lg text-center">{section.description}</p>
+                  </div>
+                  <div className="relative aspect-video order-2 md:order-none">
+                    <Image
+                      src={section.image}
+                      alt={section.alt}
+                      fill
+                      className="object-cover rounded-lg"
+                      quality={90}
+                    />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="relative aspect-video order-2 md:order-none">
+                    <Image
+                      src={section.image}
+                      alt={section.alt}
+                      fill
+                      className="object-cover rounded-lg"
+                      quality={90}
+                    />
+                  </div>
+                  <div className={`flex flex-col justify-center p-6 md:p-8 ${section.color} rounded-lg text-black order-1 md:order-none`}>
+                    <div className="flex justify-center mb-4 md:mb-6">
+                      <Image
+                        src={section.icon}
+                        alt={`${section.title} Icon`}
+                        width={60}
+                        height={60}
+                        className="w-16 h-16 md:w-20 md:h-20"
+                      />
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4">{section.title}</h2>
+                    <p className="text-base md:text-lg text-center">{section.description}</p>
+                  </div>
+                </>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>
@@ -51,4 +107,4 @@ const AMSExpectations2 = () => {
   );
 };
 
-export default AMSExpectations2;
+export default AMSExpectations;

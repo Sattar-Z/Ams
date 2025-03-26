@@ -13,39 +13,38 @@ interface GalleryImage {
 
 const featuredImages: GalleryImage[] = [
   {
-    src: "/images/ams-24-01.jpeg",
+    src: "/images/omni25/1.jpeg",
     alt: "The Organisers",
-    caption: "The Organisers - iKE (BP) Onuorah, Chiedozie (Edo) Onuora & Ramon Olaleye",
+    caption: "The Organisers - Chiedozie (Edo) Onuora, iKE (BP) Onuorah & Ramon Olaleye",
   },
   {
-    src: "/images/ams-london-4.jpeg",
-    alt: "Keynote - Popular Music",
-    caption: "Popular Music is African Music",
+    src: "/images/omni25/2.jpeg",
+    alt: "Panel: Legal Harmony",
+    caption: "Legal Harmony: Navigating Ent. Law",
   },
   {
-    src: "/images/AMS-london-dec.jpeg",
-    alt: "AMS - panel 1: The Afrobeats Phenomenon",
-    caption: "The Afrobeats Phenomenon - Decoding the Global Takeover",
+    src: "/images/omni25/3.jpeg",
+    alt: "Panel: Local Business Platforms",
+    caption: "Local Business Platforms - Global Impact",
   },
   {
-    src: "/images/ams-london2.jpeg",
-    alt: "AMS - Panel 2: Digital Dynamics",
-    caption:
-      "Digital Dynamics - house streaming and social media are reshaping african music distribution",
+    src: "/images/omni25/4.jpeg",
+    alt: "The Omniverse 2024 Main Stage",
+    caption: "The Omniverse 2024 Main Stage - Dragon's Den",
   },
   {
-    src: "/images/ams-london3.jpeg",
-    alt: "Keynote - PPL and African Music",
-    caption: "PPL and African Music: capacity building, collection and payments",
+    src: "/images/omni25/5.jpeg",
+    alt: "Panel: Monetizing Melodies",
+    caption: "Monetizing Melodies - Revenue Streams",
   },
   {
-    src: "/images/ams-london-5.jpeg",
-    alt: "Audience",
-    caption: "AMS 2024 Audience",
+    src: "/images/omni25/6.jpeg",
+    alt: "The Organisers",
+    caption: "iKE (BP) Onuorah, Obi Asika & Ramon Olaleye",
   },
 ];
 
-export function GalleryHomeSection() {
+export function GalleryHome4Section() {
   const [fullscreenImage, setFullscreenImage] = useState<GalleryImage | null>(
     null
   );
@@ -60,7 +59,19 @@ export function GalleryHomeSection() {
 
   return (
     <div>
-      <div className="container mt-10 mx-auto px-4 py-4 md:py-6">
+      <div className="container mx-auto px-4 py-1 md:py-2">
+         {/* Header Section */}
+                <motion.div
+                  className="flex flex-col items-center gap-6 mb-12 md:mb-16"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <h2 className="text-center uppercase mb-16 text-4xl sm:text-6xl font-extrabold">
+                    Looking Back at Past AMS Events
+                  </h2>
+                </motion.div>
 
         {/* Featured Images Section */}
         <motion.div
@@ -72,7 +83,7 @@ export function GalleryHomeSection() {
         >
           <div className="text-center mb-8">
             <span className="inline-block px-4 py-2 bg-slate-800/50 rounded-full text-2xl text-slate-300 backdrop-blur-sm">
-              AMS LONDON DEC 2024
+              THE OMNIVERSE AFRICA, LAGOS FEB-MAR 2025
             </span>
           </div>
 
@@ -107,14 +118,14 @@ export function GalleryHomeSection() {
         </motion.div>
 
         {/* Navigation Section */}
-        {/* <motion.div
+        <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <p className="text-slate-300 text-sm sm:text-base mb-6">
+          {/* <p className="text-slate-300 text-sm sm:text-base mb-6">
             Explore our collection of memories from past events and meet the
             visionaries behind African Music Summit
           </p>
@@ -124,8 +135,8 @@ export function GalleryHomeSection() {
             className="bg-slate-800/50 text-white hover:bg-slate-800/70 border-slate-700"
           >
             View All Photos
-          </Button>
-        </motion.div> */}
+          </Button> */}
+        </motion.div>
       </div>
 
       {/* Fullscreen Modal */}
@@ -141,4 +152,4 @@ export function GalleryHomeSection() {
   );
 }
 
-export default GalleryHomeSection;
+export default GalleryHome4Section;

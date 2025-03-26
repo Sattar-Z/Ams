@@ -10,7 +10,7 @@ export function HeroSection() {
       {/* <SiteHeader /> */}
 
       <BackgroundBeamsWithCollision>
-        <div className="container mx-auto px-4 py-12 md:py-20 flex flex-col justify-center items-center min-h-[80vh] gap-6 md:gap-8">
+        <div className="container mx-auto px-4 py-6 md:py-10 flex flex-col justify-center items-center min-h-[80vh] gap-6 md:gap-8">
           {/* Hero Title */}
           <h2 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center text-white font-sans tracking-tight max-w-[90%] md:max-w-[80%] relative z-20">
             Welcome to{" "}

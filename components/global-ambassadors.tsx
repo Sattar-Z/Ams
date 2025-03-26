@@ -57,26 +57,30 @@ const GlobalAmbassadors = () => {
   };
 
   return (
-    <section className="py-8 sm:py-16 md:py-24 border-b border-white bg-gradient-to-br from-black via-purple-950 to-black">
+    <section className="py-8 sm:py-16 md:py-24 border-b border-white bg-transparent to-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2 
-          className="text-center mb-6 text-4xl sm:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500"
+          className="text-center mb-6 text-4xl sm:text-6xl font-extrabold bg-clip-text text-transparent bg-white"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          style={{
+            lineHeight: "1.8",
+          }}
         >
           GLOBAL AMBASSADORS OF AFRICAN EXCELLENCE
         </motion.h2>
         
-        <motion.p 
-          className="text-center text-xl text-slate-300 max-w-3xl mx-auto mb-16"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-        >
+        <p
+                  className="text-justify text-xl md:text-2xl text-slate-300 leading-relaxed mb-6"
+                  style={{
+                    lineHeight: "1.8",
+                    textAlign: "justify",
+                  }}
+                >
           Meet the artists who have taken Afrobeats from Nigeria to the world stage, 
           redefining the global music landscape and showcasing African excellence.
-        </motion.p>
+        </p>
         
         <motion.div 
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10"
@@ -103,8 +107,8 @@ const GlobalAmbassadors = () => {
                 </div>
                 
                 <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 transition-all duration-300 group-hover:bg-black/60">
-                  <h3 className="text-xl md:text-2xl font-bold text-yellow-400">{artist.name}</h3>
-                  <p className="text-sm md:text-base text-orange-300 font-medium mb-1">{artist.title}</p>
+                  <h3 className="text-xl md:text-2xl font-bold text-white">{artist.name}</h3>
+                  <p className="text-sm md:text-base text-white font-medium mb-1">{artist.title}</p>
                   <p className="text-xs md:text-sm text-slate-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{artist.description}</p>
                 </div>
               </div>
@@ -112,16 +116,7 @@ const GlobalAmbassadors = () => {
           ))}
         </motion.div>
         
-        <motion.div 
-          className="mt-16 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-        >
-          <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-orange-600 hover:from-purple-700 hover:to-orange-700 rounded-lg text-lg font-bold text-white transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-            EXPLORE ALL ARTISTS
-          </button>
-        </motion.div>
+     
       </div>
     </section>
   );

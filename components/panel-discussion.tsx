@@ -1,91 +1,93 @@
 import React from 'react';
 import Image from 'next/image';
 
-const AMSExpectations2 = () => {
+const AMSExpectations = () => {
   const sections = [
     {
       id: 1,
-      image: "/images/panel1.jpeg",
+      image: "/images/pan3.jpeg",
       icon: "/images/chat.svg",
       alt: "Panels Discussions at AMS",
       title: "PANELS DISCUSSIONS",
-      description: "Join us for exclusive discussions with the top minds in the Afrobeats industry artist managers, label executives, music business strategists, collection societies, entertainment lawyers and creatives shaping the future of the genre. Whether you're looking to break into the industry, scale your career, or maximize your earnings, this is your opportunity to gain insider knowledge and position yourself for success in the global Afrobeats movement.",
-      textPosition: "right"
+      description: "Join us for exclusive discussions with the top minds in the Afrobeats industry. Connect with artist managers, label executives, music business strategists, and entertainment lawyers shaping the future of the genre."
     },
     {
       id: 2,
-      image: "/images/panel2.jpeg",
+      image: "/images/pan1.jpeg",
       icon: "/images/int.svg",
       alt: "Interviews at AMS",
       title: "INTERVIEWS",
-      description: "Explore exclusive interviews and feedback from industry leaders, guest speakers, artists managers, and attendees of our AMS event, as they share their experiences, key takeaways, and insights on the future of Afrobeats and AMS events. Hear firsthand accounts of the strategies discussed, from artist development and royalty collection to legal matters and global market expansion, offering valuable perspectives on how to succeed in the African music industry.",
-      textPosition: "left"
+      description: "Dive into exclusive interviews and insights from industry leaders, guest speakers, and artist managers. Explore strategies for artist development, royalty collection, and global market expansion."
     },
     {
       id: 3,
-      image: "/images/panel3.jpeg",
+      image: "/images/pan2.jpeg",
       icon: "/images/speak.svg",
       alt: "Keynote Presentations at AMS",
-      title: "KEYNOTES SPEAKERS",
-      description: "Our keynote speakers are top industry leaders, including renowned artist managers, music executives, record label heads, and influential creatives, who will share their expertise and provide exclusive insights on the business of Afrobeats. Learn from those shaping the genre's global success, from artist development and record label strategies to monetization, sync licensing, royalty collections, and legal considerations in the music industry. Gain invaluable knowledge on how to navigate the complexities of music rights, revenue streams, and the legal frameworks that protect artists and professionals in the global music market.",
-      textPosition: "right"
+      title: "KEYNOTE SPEAKERS",
+      description: "Learn from top industry leaders who will share expertise on Afrobeats. Gain insights into artist development, record label strategies, monetization, sync licensing, and music industry legal frameworks."
     }
   ];
 
   return (
-    <section className="w-full bg-black">
-      <div className="w-full py-12">
-        <div className="flex flex-col items-center mb-8">
-          <div className="w-16 h-16 mb-6">
-            <Image
-              src="/images/icon.svg"
-              alt="AMS Icon"
-              width={64}
-              height={64}
-              priority
-            />
-          </div>
-          <h1 className="text-4xl font-bold text-center text-white mb-12">
-            WHAT TO EXPECT AT AMS?
-          </h1>
-        </div>
-        <div className="space-y-8">
-          {sections.map((section) => (
-            <div
-              key={section.id}
-              className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]"
-            >
-              <Image
-                src={section.image}
-                alt={section.alt}
-                fill
-                quality={100}
-                priority={section.id === 1}
-                className="object-contain"
-              />
-              {/* Text Overlay */}
-              <div
-                className={`text-center absolute top-0 bottom-0 w-1/3 flex flex-col justify-center p-10 text-white
-                ${section.textPosition === 'right' ? 'right-28' : 'left-28'}`}
-              >
-                <div className="flex flex-col items-center mb-4">
-                  <div className="w-20 h-20 mb-1">
+    <section className="bg-black text-white py-16">
+      <div className="container mx-auto px-4">
+        <h1 className="text-4xl font-bold text-center mb-16">
+          WHAT TO EXPECT AT AMS?
+        </h1>
+        <div className="grid grid-cols-2 gap-8">
+          {sections.map((section, index) => (
+            <React.Fragment key={section.id}>
+              {index % 2 === 0 ? (
+                <>
+                  <div className="flex flex-col justify-center p-8 bg-gray-900 rounded-lg">
+                    <div className="flex justify-center mb-6">
+                      <Image
+                        src={section.icon}
+                        alt={`${section.title} Icon`}
+                        width={80}
+                        height={80}
+                      />
+                    </div>
+                    <h2 className="text-3xl font-bold text-center mb-4">{section.title}</h2>
+                    <p className="text-lg text-center">{section.description}</p>
+                  </div>
+                  <div className="relative aspect-video">
                     <Image
-                      src={section.icon}
-                      alt={`${section.title} Icon`}
-                      width={100}
-                      height={100}
+                      src={section.image}
+                      alt={section.alt}
+                      fill
+                      className="object-cover rounded-lg"
+                      quality={90}
                     />
                   </div>
-                </div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                  {section.title}
-                </h2>
-                <p className="text-sm sm:text-base md:text-lg">
-                  {section.description}
-                </p>
-              </div>
-            </div>
+                </>
+              ) : (
+                <>
+                  <div className="relative aspect-video">
+                    <Image
+                      src={section.image}
+                      alt={section.alt}
+                      fill
+                      className="object-cover rounded-lg"
+                      quality={90}
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center p-8 bg-gray-900 rounded-lg">
+                    <div className="flex justify-center mb-6">
+                      <Image
+                        src={section.icon}
+                        alt={`${section.title} Icon`}
+                        width={80}
+                        height={80}
+                      />
+                    </div>
+                    <h2 className="text-3xl font-bold text-center mb-4">{section.title}</h2>
+                    <p className="text-lg text-center">{section.description}</p>
+                  </div>
+                </>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>
@@ -93,4 +95,4 @@ const AMSExpectations2 = () => {
   );
 };
 
-export default AMSExpectations2;
+export default AMSExpectations;
