@@ -12,10 +12,6 @@ const AfrobeatsSection = () => {
           transition={{ duration: 0.6 }}
         >
           WHAT IS AFROBEATS
-          <h3 className="text-xl sm:text-3xl text-white my-3"
-          >
-            
-          </h3>
         </motion.h2>
 
         <motion.div 

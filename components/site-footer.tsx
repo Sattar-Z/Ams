@@ -1,20 +1,37 @@
 import Link from "next/link";
 import React from "react";
 
+const partners = {
+  primary: [
+    {
+      name: "PPL",
+      logo: "/images/PPL.png",
+    },
+    {
+      name: "BPI",
+      logo: "/images/British_Phonographic_Industry.svg.png",
+    },
+    {
+      name: "BMRU",
+      logo: "/images/bmru-logo.png",
+    },
+    {
+      name: "Beat-Fm",
+      logo: "/images/beat_fm.png",
+    },
+  ],
+};
+
 function SiteFooter() {
   return (
     <footer className="bg-black border-t border-black-800 from-gray-900 via-gray-800 to-black py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-justify leading-10 grid grid-cols-1 md:grid-cols-2 gap-8 pl-5 ml-5 lg:pl-20 lg:ml-20"
-        style={{
-          lineHeight: "40px;",
-        }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pl-5 ml-5 lg:pl-20 lg:ml-20">
           <div className="text-justify">
             <h3 className="text-sm font-semibold text-slate-200 tracking-wider uppercase mb-4">
               AMS 2023
             </h3>
-            <p>
+            <p className="text-slate-400">
               The African Music Summit is a one-of-a-kind gathering that seeks
               to showcase, discuss, and strategize the growth and potential of
               the African music business on the international music landscape.
@@ -28,43 +45,25 @@ function SiteFooter() {
             <h3 className="text-sm font-semibold text-slate-200 tracking-wider uppercase mb-4">
               Partners
             </h3>
-            <ul className="space-y-2">
-              <li>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              {partners.primary.map((partner) => (
                 <Link
+                  key={partner.name}
                   href="#"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity"
+                  title={partner.name}
                 >
-                  Phonographic Performance Limited (PPL)
+                  <img 
+                    src={partner.logo} 
+                    alt={partner.name} 
+                    className="max-h-12 max-w-full object-contain"
+                  />
                 </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-slate-400 hover:text-white transition-colors"
-                >
-                  British Phonographic Industry (BPI)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-slate-400 hover:text-white transition-colors"
-                >
-                  Black Music Research Unit (BMRU)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-slate-400 hover:text-white transition-colors"
-                >
-                  Beat 103.6 FM
-                </Link>
-              </li>
-            </ul>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center ">
+        <div className="mt-8 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-slate-400 pl-0 ml-0 lg:pl-20 lg:ml-20">
             © 2025 AMS. All rights reserved.
           </p>
