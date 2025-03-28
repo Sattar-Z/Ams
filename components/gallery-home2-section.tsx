@@ -78,7 +78,7 @@ export function GalleryHome2Section() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="text-center mb-8">
-          <span className="inline-block px-4 py-2 text-3xl font-extrabold text-slate-300 backdrop-blur-sm">
+          <span className="inline-block px-4 py-2 text-lg sm:text-3xl font-extrabold text-slate-300 backdrop-blur-sm">
               THE OMNIVERSE AFRICA, LAGOS FEB-MAR 2024
             </span>
           </div>

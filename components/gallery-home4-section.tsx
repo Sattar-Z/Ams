@@ -75,7 +75,7 @@ export function GalleryHome4Section() {
         </motion.div>
 
         <div className="text-center mb-8">
-          <span className="inline-block px-4 py-2 text-3xl font-extrabold text-slate-300 backdrop-blur-sm">
+          <span className="inline-block px-4 py-2 text-lg sm:text-3xl font-extrabold text-slate-300 backdrop-blur-sm">
             THE OMNIVERSE AFRICA, LAGOS FEB-MAR 2025
           </span>
         </div>
@@ -89,10 +89,14 @@ export function GalleryHome4Section() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <h3 className="mb-6 sm:mb-24 text-md sm:text-xl text-white uppercase font-extrabold">
-          The Role of the Nigerian Government in Strengthening the Creative
-          Economy: Policies, Support and Opportunities
-        </h3>
+        <h3 className="mb-6 sm:mb-24 text-sm text-center sm:text-left sm:text-xl text-white font-normal sm:font-extrabold"
+        style={{
+          lineHeight: "30px;",
+        }}
+        >
+  The Role of the Nigerian Government in Strengthening the Creative
+  Economy: Policies, Support and Opportunities
+</h3>
 
         {/* Featured Images Section */}
         <motion.div

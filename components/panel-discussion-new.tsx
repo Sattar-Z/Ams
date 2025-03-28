@@ -81,7 +81,7 @@ const AMSExpectations = () => {
                     <h2 className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4">{section.title}</h2>
                     <p className="text-base md:text-lg text-center">{section.description}</p>
                   </div>
-                  <div className="relative aspect-video order-2 md:order-none">
+                  <div className="relative aspect-video hidden md:block order-2 md:order-none">
                     <Image
                       src={section.image}
                       alt={section.alt}
@@ -93,7 +93,7 @@ const AMSExpectations = () => {
                 </>
               ) : (
                 <>
-                  <div className="relative aspect-video order-2 md:order-none">
+                  <div className="relative aspect-video hidden md:block order-2 md:order-none">
                     <Image
                       src={section.image}
                       alt={section.alt}
