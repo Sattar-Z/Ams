@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
     {
       name: "Obi Asika",
       image: "/images/obi.JPG",
-      role: "Director-General/ CEO, National Council For Arts & Culture, Nigeria, + Founder, Omniverse Africa",
+      role: "Director General, National Council for Arts & Culture, Nigeria",
       quote:
         "I am delighted to support the African Music Summit, the world is finally beginning to feel the power and potential of our music but we need more of these events and conversations to dig into licencing, touring, product and merchandise as we urgently drive monetization for African creators at home and abroad.",
     },
@@ -76,7 +76,7 @@ const TestimonialsSection = () => {
   const testimonialVariants = {
     initial: { opacity: 0, x: 100 },
     animate: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: -100 }
+    exit: { opacity: 0, x: -100 },
   };
 
   return (
@@ -88,7 +88,7 @@ const TestimonialsSection = () => {
 
         <div className="relative">
           <AnimatePresence mode="wait">
-            <motion.div 
+            <motion.div
               key={index}
               initial="initial"
               animate="animate"
@@ -102,7 +102,7 @@ const TestimonialsSection = () => {
               </p>
             </motion.div>
           </AnimatePresence>
-          
+
           <div className="flex items-center justify-center mt-6">
             <Image
               src={testimonials[index].image}

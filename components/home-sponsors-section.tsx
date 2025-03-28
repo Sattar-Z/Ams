@@ -19,7 +19,7 @@ function TestimonialsSection() {
               logo: "/images/British_Phonographic_Industry.svg.png",
               alt: "Company 3",
             },
-            { logo: "/images/bmru-logo.png", alt: "Company 4" },
+            { logo: "/images/bmru.png", alt: "Company 4" },
             { logo: "/images/aaPunch.png", alt: "Company 5" },
             { logo: "/images/onmi.jpg", alt: "Company 6" },
             { logo: "/images/dja.png", alt: "Company 7" },

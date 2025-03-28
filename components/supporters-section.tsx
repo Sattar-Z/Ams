@@ -33,12 +33,13 @@ function SupportersSection() {
               </div>
             </motion.div>
             <div className="order-1 lg:order-2">
-              <p className="text-justify leading-10 sm:text-lg text-slate-300"
-              style={{
-                lineHeight: "40px;",
-                textAlign: "justify",
-                wordSpacing: "-2px;"
-              }}
+              <p
+                className="text-justify leading-10 sm:text-lg text-slate-300"
+                style={{
+                  lineHeight: "40px;",
+                  textAlign: "justify",
+                  wordSpacing: "-2px;",
+                }}
               >
                 The BPI (British Phonographic Industry), is a UK record label
                 trade association representing the UK's world-leading recorded
@@ -59,7 +60,7 @@ function SupportersSection() {
               transition={{ duration: 0.8 }}
             >
               <Image
-                src="/images/bmru-logo.png"
+                src="/images/bmru.png"
                 alt="BMRU Logo"
                 height={300}
                 width={300}
@@ -67,12 +68,13 @@ function SupportersSection() {
               />
             </motion.div>
             <div className="order-1">
-              <p className="text-justify leading-10 sm:text-lg text-slate-300"
-              style={{
-                lineHeight: "40px;",
-                textAlign: "justify",
-                wordSpacing: "-2px;"
-              }}
+              <p
+                className="text-justify leading-10 sm:text-lg text-slate-300"
+                style={{
+                  lineHeight: "40px;",
+                  textAlign: "justify",
+                  wordSpacing: "-2px;",
+                }}
               >
                 The Black Music Research Unit, established at the University of
                 Westminster under Mykaell S. Riley's guidance, comprises a
@@ -151,12 +153,13 @@ function SupportersSection() {
             </div>
           </motion.div>
           <div className="order-1 lg:order-2">
-            <p className="text-justify leading-10 sm:text-lg text-slate-300"
-            style={{
-              lineHeight: "40px;",
-              textAlign: "justify",
-              wordSpacing: "-2px;"
-            }}
+            <p
+              className="text-justify leading-10 sm:text-lg text-slate-300"
+              style={{
+                lineHeight: "40px;",
+                textAlign: "justify",
+                wordSpacing: "-2px;",
+              }}
             >
               Formerly known as BANG Radio, The Beat London 103.6fm will
               continue to fly the flag as London’s number one urban community

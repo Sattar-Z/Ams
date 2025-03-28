@@ -4,13 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import SiteHeader from "@/components/site-header";
 import { HeroSection } from "@/components/hero-section";
-import FeaturesSection from "@/components/features-section";
-import ExampleSection from "@/components/example-section";
-import ExampleSection2 from "@/components/example2-section";
 import TestimonialsSection from "@/components/testimonials-section";
-import CTASection from "@/components/cta-section";
-import YoutubeSection from "@/components/youtube-section";
-import HomeSponsors from "@/components/home-sponsors-section";
 import SiteFooter from "@/components/site-footer";
 import GalleryHomeSection from "@/components/gallery-home-section";
 import GalleryHome2Section from "@/components/gallery-home2-section";
@@ -19,8 +13,6 @@ import GalleryHome4Section from "@/components/gallery-home4-section";
 // import AMSExpectations from "@/components/panel-discussion";
 import AMSExpectations from "@/components/panel-discussion-new";
 import AfrobeatsSection from "@/components/what-is-afro";
-import WhyAfrobeatsMatters from "@/components/why-afro-matters";
-import GlobalAmbassadors from "@/components/global-ambassadors";
 const AnimatedBackground = () => {
   const controls = useAnimation();
 
@@ -59,26 +51,13 @@ export default function Component() {
         <SiteHeader />
 
         <main>
-          {/* Hero Section */}
           <HeroSection />
-
-          {/* <ExampleSection /> */}
-          {/* Example Section */}
           <AfrobeatsSection/>
-          <YoutubeSection />
-          {/* Youtube Section */}
-          {/* <AMSExpectations/> */}
           <AMSExpectations />
-          {/* <ExampleSection2 /> */}
           <GalleryHome4Section/>
           <GalleryHomeSection/>
           <GalleryHome2Section/>
           <GalleryHome3Section/>
-          <WhyAfrobeatsMatters/>
-          <GlobalAmbassadors/>
-          {/* CTA Section */}
-          {/* <CTASection /> */}
-          {/* Testimonials Section */}
           <TestimonialsSection/>
         </main>
 

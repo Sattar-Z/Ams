@@ -11,7 +11,7 @@ const AfrobeatsSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          WHAT IS AFROBEATS
+          ABOUT US
         </motion.h2>
 
         <motion.div 
@@ -34,10 +34,10 @@ const AfrobeatsSection = () => {
                   textAlign: "justify"
                 }}
               >
-               Afrobeats is the Africa's Global Sound Revolution, at African Music Summit (AMS), we champion the power of African music on the world stage. One genre leading this revolution is Afrobeats, a dynamic and infectious sound that has captivated global audiences.
+               The African Music Summit, initially known as The Afrobeats Educational Roadshow (TAER), has evolved into a unique gathering dedicated to exploring and advancing the African music industry's international presence. With its central theme, "Leveraging Our Cultural Equity, From the Streets to the Boardroom," the summit focuses on innovative ideas, cutting-edge technologies, and forward-thinking strategies that drive the African music industry's growth.The African Music Summit, initially known as The Afrobeats Educational Roadshow (TAER), has evolved into a unique gathering dedicated to exploring and advancing the African music industry's international presence. With its central theme, "Leveraging Our Cultural Equity, From the Streets to the Boardroom," the summit focuses on innovative ideas, cutting-edge technologies, and forward-thinking strategies that drive the African music industry's growth.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+              {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
                 <motion.div 
                   className="bg-transparent backdrop-blur-md border border-white/20 p-4 rounded-lg"
                   whileHover={{ scale: 1.02 }}
@@ -64,7 +64,7 @@ const AfrobeatsSection = () => {
                   <h4 className="text-lg font-bold text-yellow-400">Future Evolution</h4>
                   <p className="text-white">Continuously innovating and reshaping global music landscapes</p>
                 </motion.div>
-              </div>
+              </div> */}
 
               <div hidden className="mt-8">
                 <button className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-lg sm:text-xl text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1">

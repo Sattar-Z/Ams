@@ -30,7 +30,25 @@ const AMSExpectations = () => {
       title: "KEYNOTE SPEAKERS",
       color: "bg-red-600",
       description: "Learn from top industry leaders who will share expertise on Afrobeats. Gain insights into artist development, record label strategies, monetization, sync licensing, and music industry legal frameworks."
-    }
+    },
+    {
+      id: 4,
+      image: "/images/workshop.jpeg",
+      icon: "/images/work.svg",
+      alt: "Interviews at AMS",
+      title: "MASTERCLASS / WORKSHOP",
+      color: "bg-yellow-600",
+      description: " ⁠Lectures on key subjects from practitioners in specific fields relating to the creative industry and learning new skills and techniques from experts in a specific field."
+    },
+    {
+      id: 5,
+      image: "/images/net.jpeg",
+      icon: "/images/network.svg",
+      alt: "Interviews at AMS",
+      title: "NETWORKING",
+      color: "bg-red-600",
+      description: "Creating an environment for industry professionals such as producers, record labels, music executives, etc to meet and interact Network."
+    },
   ];
 
   return (

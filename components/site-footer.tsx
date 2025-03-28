@@ -4,16 +4,20 @@ import React from "react";
 const partners = {
   primary: [
     {
+      name: "omniverse",
+      logo: "/images/omni.png",
+    },
+    {
       name: "PPL",
       logo: "/images/PPL.png",
     },
     {
-      name: "BPI",
-      logo: "/images/British_Phonographic_Industry.svg.png",
+      name: "BMRU",
+      logo: "/images/bmru.png",
     },
     {
-      name: "BMRU",
-      logo: "/images/bmru-logo.png",
+      name: "BPI",
+      logo: "/images/British_Phonographic_Industry.svg.png",
     },
     {
       name: "Beat-Fm",
@@ -26,10 +30,10 @@ function SiteFooter() {
   return (
     <footer className="bg-black border-t border-black-800 from-gray-900 via-gray-800 to-black py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pl-5 ml-5 lg:pl-20 lg:ml-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pl-5 ml-5 lg:pl-20 lg:ml-20">
           <div className="text-justify">
             <h3 className="text-sm font-semibold text-slate-200 tracking-wider uppercase mb-4">
-              AMS 2023
+              AMS
             </h3>
             <p className="text-slate-400">
               The African Music Summit is a one-of-a-kind gathering that seeks
@@ -48,17 +52,17 @@ function SiteFooter() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {partners.primary.map((partner) => (
                 <Link
-                  key={partner.name}
-                  href="#"
-                  className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity"
-                  title={partner.name}
-                >
-                  <img 
-                    src={partner.logo} 
-                    alt={partner.name} 
-                    className="max-h-12 max-w-full object-contain"
-                  />
-                </Link>
+                key={partner.name}
+                href="#"
+                className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity"
+                title={partner.name}
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-auto w-64 object-contain" 
+                />
+              </Link>
               ))}
             </div>
           </div>

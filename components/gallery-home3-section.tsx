@@ -78,7 +78,7 @@ export function GalleryHome3Section() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="text-center mb-8">
-            <span className="inline-block px-4 py-2 bg-slate-800/50 rounded-full text-2xl text-slate-300 backdrop-blur-sm">
+          <span className="inline-block px-4 py-2 text-3xl font-extrabold text-slate-300 backdrop-blur-sm">
             AMS LONDON NOV 2023
             </span>
           </div>
