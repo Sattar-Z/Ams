@@ -20,28 +20,28 @@ const featuredImages: GalleryImage[] = [
   },
   {
     src: "/images/omni25/2.jpeg",
-    alt: "Panel: Legal Harmony",
-    caption: "Legal Harmony: Navigating Ent. Law",
+    alt: "Panel: The Role of the Nigerian Government in Strengthening the Creative Economy",
+    caption: "The Role of the Nigerian Government in Strengthening the Creative Economy: Policies, Support and Opportunities",
   },
   {
     src: "/images/omni25/3.jpeg",
-    alt: "Panel: Local Business Platforms",
-    caption: "Local Business Platforms - Global Impact",
+    alt: "Round Table: Discussion",
+    caption: "Nigerian Music Business Round Table: Discussion",
   },
   {
     src: "/images/omni25/11.jpeg",
-    alt: "The Omniverse 2024 Main Stage",
-    caption: "The Omniverse 2024 Main Stage - Dragon's Den",
+    alt: "The Omniverse 2025 Main Stage",
+    caption: "The Omniverse 2025 Main Stage - Dragon's Den",
   },
   {
     src: "/images/omni25/5.jpeg",
-    alt: "Panel: Monetizing Melodies",
-    caption: "Monetizing Melodies - Revenue Streams",
+    alt: "Reception: Omniverse 2025",
+    caption: "Reception: Omniverse 2025 networking hosted at the UN Office Lagos",
   },
   {
     src: "/images/omni25/6.jpeg",
     alt: "The Organisers",
-    caption: "iKE (BP) Onuorah, Obi Asika & Ramon Olaleye",
+    caption: "Strictly entertainment team with Obi Asika",
   },
 ];
 
