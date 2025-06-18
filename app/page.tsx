@@ -7,9 +7,12 @@ import { HeroSection } from "@/components/hero-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import SiteFooter from "@/components/site-footer";
 import GalleryHomeSection from "@/components/gallery-home-section";
+import NafestSection from "@/components/nafest-section";
 import GalleryHome2Section from "@/components/gallery-home2-section";
 import GalleryHome3Section from "@/components/gallery-home3-section";
+import GalleryHome5Section from "@/components/gallery-home5-section";
 import GalleryHome4Section from "@/components/gallery-home4-section";
+import ExampleSection from "@/components/example-section";
 // import AMSExpectations from "@/components/panel-discussion";
 import AMSExpectations from "@/components/panel-discussion-new";
 import AfrobeatsSection from "@/components/what-is-afro";
@@ -52,8 +55,10 @@ export default function Component() {
 
         <main>
           <HeroSection />
+          <NafestSection/>
           <AfrobeatsSection/>
           <AMSExpectations />
+          <GalleryHome5Section/>
           <GalleryHome4Section/>
           <GalleryHomeSection/>
           <GalleryHome2Section/>

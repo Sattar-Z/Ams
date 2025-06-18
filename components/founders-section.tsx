@@ -61,12 +61,11 @@ function FoundersSection() {
                   African Music Summit
                 </span>
               </h2>
-              <p
-                className="text-justify leading-10 sm:text-lg md:text-xl lg:text-2xl text-slate-300 mb-10 max-w-5xl mx-auto font-bold"
+              <p 
+                className="text-justify text-xl md:text-2xl text-slate-300 leading-relaxed mb-6"
                 style={{
-                  lineHeight: "40px;",
-                  textAlign: "justify",
-                  wordSpacing: "-2px;"
+                  lineHeight: "1.8",
+                  textAlign: "justify"
                 }}
               >
                 Founded in 2012 by Ramon Olaleye, a Systems Implementation
@@ -160,13 +159,12 @@ function FoundersSection() {
             ))}
           </motion.div>
 
-          <p
-            className="text-justify leading-10 sm:text-lg md:text-xl lg:text-2xl text-slate-300 mb-3 max-w-8xl mx-auto font-bold"
-            style={{
-                lineHeight: "40px;",
-                textAlign: "justify",
-                wordSpacing: "-2px;"
-              }}
+          <p 
+                className="text-justify text-xl md:text-2xl text-slate-300 leading-relaxed mb-6"
+                style={{
+                  lineHeight: "1.8",
+                  textAlign: "justify"
+                }}
           >
             The Afrobeats Educational Roadshow served as a pioneering platform
             that connected the emerging UK Afrobeats scene with the mainstream
@@ -176,13 +174,12 @@ function FoundersSection() {
             Department, The Black Music Research Unit (BMRU), The Africa Centre
             and more.
           </p>
-          <p
-            className="text-justify leading-10 sm:text-lg md:text-xl lg:text-2xl text-slate-300 mb-3 max-w-8xl mx-auto font-bold"
-            style={{
-                lineHeight: "40px;",
-                textAlign: "justify",
-                wordSpacing: "-2px;"
-              }}
+          <p 
+                className="text-justify text-xl md:text-2xl text-slate-300 leading-relaxed mb-6"
+                style={{
+                  lineHeight: "1.8",
+                  textAlign: "justify"
+                }}
           >
             The initiative's mission was to provide education, information, and
             empowerment to African music professionals while strategically
@@ -190,13 +187,12 @@ function FoundersSection() {
             demonstrated by one of Afrobeats earliest publication in Music Week
             2012 orchestrated by Strictly Entertainment Music.
           </p>
-          <p
-            className="text-justify leading-10 sm:text-lg md:text-xl lg:text-2xl text-slate-300 mb-3 max-w-8xl mx-auto font-bold"
-            style={{
-                lineHeight: "40px;",
-                textAlign: "justify",
-                wordSpacing: "-2px;"
-              }}
+          <p 
+                className="text-justify text-xl md:text-2xl text-slate-300 leading-relaxed mb-6"
+                style={{
+                  lineHeight: "1.8",
+                  textAlign: "justify"
+                }}
           >
             Now, as we revitalize and expand the initiative, TAER has
             transformed into the African Music Summit (AMS), underlining the
@@ -217,13 +213,12 @@ function FoundersSection() {
             <h2 className="mb-16 uppercase text-3xl sm:text-5xl font-extrabold text-yellow-700 text-center">
               Topics to Be Discussed
             </h2>
-            <p
-              className="text-justify leading-10 sm:text-lg md:text-xl lg:text-xl text-slate-300 mb-3 max-w-8xl mx-auto"
-              style={{
-                lineHeight: "40px;",
-                textAlign: "justify",
-                wordSpacing: "-2px;"
-              }}
+            <p 
+                className="text-justify text-xl md:text-2xl text-slate-300 leading-relaxed mb-6"
+                style={{
+                  lineHeight: "1.8",
+                  textAlign: "justify"
+                }}
             >
               The African Music Summit will be an all-encompassing and
               enlightening event that will address a diverse array of pivotal
@@ -232,13 +227,12 @@ function FoundersSection() {
               areas, including traditional music, digital trends, and innovative
               technologies.
             </p>
-            <p
-              className="text-justify leading-10 sm:text-lg md:text-xl lg:text-xl text-slate-300 mb-3 max-w-8xl mx-auto"
-              style={{
-                lineHeight: "40px;",
-                textAlign: "justify",
-                wordSpacing: "-2px;"
-              }}
+            <p 
+                className="text-justify text-xl md:text-2xl text-slate-300 leading-relaxed mb-6"
+                style={{
+                  lineHeight: "1.8",
+                  textAlign: "justify"
+                }}
             >
               Attendees can anticipate acquiring practical insights on the art
               of collaboration, strategic investments, and a profound

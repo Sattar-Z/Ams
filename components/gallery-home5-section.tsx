@@ -13,24 +13,44 @@ interface GalleryImage {
 
 const featuredImages: GalleryImage[] = [
   {
-    src: "/images/ams-24-01.jpeg",
-    alt: "The Organisers",
-    caption: "The Organisers - Ramon Olaleye, Ike and Chiedozie (Edo) Onuora",
+    src: "/images/omni25/1.jpeg",
+    alt: "AMS Team",
+    caption:
+      "AMS Team - Chiedozie (Edo) Onuora, iKE (BP) Onuorah & Ramon Olaleye",
   },
   {
-    src: "/images/ams-24-1.jpeg",
-    alt: "The Organisers",
-    caption: "The Organisers - Ramon Olaleye, Ike and Chiedozie (Edo) Onuora",
+    src: "/images/omni25/2.jpeg",
+    alt: "Panel: The Role of the Nigerian Government in Strengthening the Creative Economy",
+    caption:
+      "The Role of the Nigerian Government in Strengthening the Creative Economy: Policies, Support and Opportunities",
   },
   {
-    src: "/images/ams-23-0.jpeg",
-    alt: "The Organisers",
-    caption: "The Organisers - Ramon Olaleye, Ike and Chiedozie (Edo) Onuora",
+    src: "/images/omni25/3.jpeg",
+    alt: "Round Table: Discussion",
+    caption: "Nigerian Music Business Round Table: Discussion",
+  },
+  {
+    src: "/images/omni25/11.jpeg",
+    alt: "The Omniverse 2025 Main Stage",
+    caption: "The Omniverse 2025 Main Stage - Dragon's Den",
+  },
+  {
+    src: "/images/omni25/5.jpeg",
+    alt: "Reception: Omniverse 2025",
+    caption:
+      "Reception: Omniverse 2025 networking hosted at the UN Office Lagos",
+  },
+  {
+    src: "/images/omni25/6.jpeg",
+    alt: "The Team",
+    caption: "Strictly entertainment team with Obi Asika",
   },
 ];
 
-export function GalleryHeroSection() {
-  const [fullscreenImage, setFullscreenImage] = useState<GalleryImage | null>(null);
+export function GalleryHome5Section() {
+  const [fullscreenImage, setFullscreenImage] = useState<GalleryImage | null>(
+    null
+  );
 
   const openFullscreen = (image: GalleryImage) => {
     setFullscreenImage(image);
@@ -41,44 +61,46 @@ export function GalleryHeroSection() {
   };
 
   return (
-    <div
-      className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black relative flex items-center w-full justify-center overflow-hidden"
-      style={{
-        backgroundImage: "url('/images/banner_bg.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="container mx-auto px-4 py-16 md:py-24">
+    <div>
+      <div className="container mx-auto px-4 py-1 mt-28 md:py-2">
         {/* Header Section */}
         <motion.div
-          className="flex flex-col items-center gap-6 mb-12 md:mb-16"
+          className="flex flex-col items-center gap-6 mb-6 md:mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl uppercase sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white tracking-tight max-w-4xl">
-            Capturing the Spirit of{" "}
-            <div className="relative inline-block mt-2 [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-orange-500 to-red-500">
-                African Music Summit
-              </span>
-            </div>
+          <h2 className="text-center uppercase mb-16 text-4xl sm:text-6xl font-extrabold">
+            Looking Back at Past AMS Events
           </h2>
-
-          <p 
-                className="text-justify text-xl md:text-2xl max-w-5xl text-slate-300 leading-relaxed mb-6"
-                style={{
-                  lineHeight: "1.8",
-                  textAlign: "justify"
-                }}
-          >
-            Journey through moments that capture the essence of Africa's diverse
-            and influential music industry at AMS London 2024
-          </p>
         </motion.div>
+
+        <div className="text-center mb-8">
+          <span className="inline-block px-4 py-2 text-lg sm:text-3xl font-extrabold text-slate-300 backdrop-blur-sm">
+            RiKE MUSIC BUSINESS WORKSHOP & MASTERCLASS- NAIROBI, KENYA | MAY
+            2025
+          </span>
+        </div>
+        <div className="relative w-full aspect-video max-w-8xl mx-auto">
+          <video
+            className="absolute inset-0 w-full h-full rounded-xl"
+            controls
+            title="The Growth Of Afrobeats"
+          >
+            <source src="/images/vids/1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h3
+          className="mb-6 sm:mb-24 text-sm text-center sm:text-left sm:text-xl text-white font-normal sm:font-extrabold"
+          style={{
+            lineHeight: "30px;",
+          }}
+        >
+          The Role of the Nigerian Government in Strengthening the Creative
+          Economy: Policies, Support and Opportunities
+        </h3>
 
         {/* Featured Images Section */}
         <motion.div
@@ -88,12 +110,6 @@ export function GalleryHeroSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="text-center mb-8">
-            <span className="inline-block px-4 py-2 bg-slate-800/50 rounded-full text-2xl text-slate-300 backdrop-blur-sm">
-              Featured Moments
-            </span>
-          </div>
-
           <div className="relative">
             {/* Decorative elements */}
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-violet-500/10 to-pink-500/10 blur-3xl" />
@@ -132,19 +148,26 @@ export function GalleryHeroSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <p className="text-slate-300 text-sm sm:text-base mb-6">
+          {/* <p className="text-slate-300 text-sm sm:text-base mb-6">
             Explore our collection of memories from past events and meet the
             visionaries behind African Music Summit
           </p>
+
+          <Button
+            variant="outline"
+            className="bg-slate-800/50 text-white hover:bg-slate-800/70 border-slate-700"
+          >
+            View All Photos
+          </Button> */}
         </motion.div>
       </div>
 
       {/* Fullscreen Modal */}
       <AnimatePresence>
         {fullscreenImage && (
-          <FullscreenImageModal 
-            image={fullscreenImage} 
-            onClose={closeFullscreen} 
+          <FullscreenImageModal
+            image={fullscreenImage}
+            onClose={closeFullscreen}
           />
         )}
       </AnimatePresence>
@@ -152,4 +175,4 @@ export function GalleryHeroSection() {
   );
 }
 
-export default GalleryHeroSection;
+export default GalleryHome5Section;

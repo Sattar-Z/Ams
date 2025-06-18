@@ -14,9 +14,9 @@ interface GalleryImage {
 const featuredImages: GalleryImage[] = [
   {
     src: "/images/omni25/1.jpeg",
-    alt: "The Organisers",
+    alt: "AMS Team",
     caption:
-      "The Organisers - Chiedozie (Edo) Onuora, iKE (BP) Onuorah & Ramon Olaleye",
+      "AMS Team - Chiedozie (Edo) Onuora, iKE (BP) Onuorah & Ramon Olaleye",
   },
   {
     src: "/images/omni25/2.jpeg",
@@ -40,7 +40,7 @@ const featuredImages: GalleryImage[] = [
   },
   {
     src: "/images/omni25/6.jpeg",
-    alt: "The Organisers",
+    alt: "The Team",
     caption: "Strictly entertainment team with Obi Asika",
   },
 ];

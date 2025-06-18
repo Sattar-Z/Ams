@@ -15,7 +15,8 @@ const featuredImages: GalleryImage[] = [
   {
     src: "/images/ams-23-0.jpeg",
     alt: "The Organisers",
-    caption: "The Organisers - Chiedozie (Edo) Onuora, iKE (BP) Onuorah & Ramon Olaleye",
+    caption:
+      "The Organisers - Chiedozie (Edo) Onuora, iKE (BP) Onuorah & Ramon Olaleye",
   },
   {
     src: "/images/ams-23-1.jpeg",
@@ -35,7 +36,8 @@ const featuredImages: GalleryImage[] = [
   {
     src: "/images/ams-24-06.jpeg",
     alt: "Keynote - PPL and African Music",
-    caption: "PPL and African Music: capacity building, collection and payments",
+    caption:
+      "PPL and African Music: capacity building, collection and payments",
   },
   {
     src: "/images/ams-24-05.jpeg",
@@ -45,7 +47,9 @@ const featuredImages: GalleryImage[] = [
 ];
 
 export function GalleryHome3Section() {
-  const [fullscreenImage, setFullscreenImage] = useState<GalleryImage | null>(null);
+  const [fullscreenImage, setFullscreenImage] = useState<GalleryImage | null>(
+    null
+  );
 
   const openFullscreen = (image: GalleryImage) => {
     setFullscreenImage(image);
@@ -56,8 +60,7 @@ export function GalleryHome3Section() {
   };
 
   return (
-    <div
-    >
+    <div>
       <div className="container mx-auto px-4 py-1 md:py-2">
         {/* Header Section */}
         <motion.div
@@ -66,8 +69,7 @@ export function GalleryHome3Section() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-        >
-        </motion.div>
+        ></motion.div>
 
         {/* Featured Images Section */}
         <motion.div
@@ -78,10 +80,30 @@ export function GalleryHome3Section() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="text-center mb-8">
-          <span className="inline-block px-4 py-2 text-lg sm:text-3xl font-extrabold text-slate-300 backdrop-blur-sm">
-            AMS LONDON NOV 2023
+            <span className="inline-block px-4 py-2 text-lg sm:text-3xl font-extrabold text-slate-300 backdrop-blur-sm">
+              AMS LONDON NOV 2023
             </span>
           </div>
+          <div className="relative w-full aspect-video max-w-8xl mx-auto">
+            <iframe
+              className="absolute inset-0 w-full h-full rounded-xl"
+              src="https://www.youtube.com/embed/IhBeAvboXlg?si=2dHvpPzjDoK4KWXd"
+              title="The Growth Of Afrobeats"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+          <h3
+            className="mb-6 sm:mb-24 text-sm text-center sm:text-left sm:text-xl text-white font-normal sm:font-extrabold"
+            style={{
+              lineHeight: "30px;",
+            }}
+          >
+            Keynote by Obi Asika, Director General of the National Council for
+            Arts and Culture - Nigeria, Africa's Gateway to Global Music
+            Industry Growth - A strategic Exploration
+          </h3>
 
           <div className="relative">
             {/* Decorative elements */}
@@ -138,9 +160,9 @@ export function GalleryHome3Section() {
       {/* Fullscreen Modal */}
       <AnimatePresence>
         {fullscreenImage && (
-          <FullscreenImageModal 
-            image={fullscreenImage} 
-            onClose={closeFullscreen} 
+          <FullscreenImageModal
+            image={fullscreenImage}
+            onClose={closeFullscreen}
           />
         )}
       </AnimatePresence>

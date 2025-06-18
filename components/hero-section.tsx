@@ -3,6 +3,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 // import SiteHeader from "@/components/site-header";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -45,14 +46,14 @@ export function HeroSection() {
           {/* Buttons Section */}
           <div className="flex flex-col sm:flex-row justify-center w-full max-w-md mx-auto px-4">
             {/* Contact Button */}
-            <a href="/contact">
+            <Link href="/contact">
               <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-slate-50 w-full sm:w-auto">
 
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-yellow-700 px-6 sm:px-12 py-5 text-lg font-medium text-white backdrop-blur-3xl">
                   Contact us
                 </span>
               </button>
-            </a>
+            </Link>
 
             {/* Tickets Button */}
             {/* <a

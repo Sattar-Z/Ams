@@ -44,11 +44,12 @@ export function SponsorHeroSection() {
             </div>
           </h2>
 
-          <p
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-300 mb-10 max-w-5xl mx-auto font-bold text-center"
-            style={{
-              lineHeight: "50px;",
-            }}
+          <p 
+                className="text-justify text-xl md:text-2xl text-slate-300 leading-relaxed mb-6"
+                style={{
+                  lineHeight: "1.8",
+                  textAlign: "justify"
+                }}
           >
             We are grateful for the unwavering support from our sponsors who
             help drive our vision forward. Meet our primary sponsor below.

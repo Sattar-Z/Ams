@@ -14,8 +14,8 @@ interface GalleryImage {
 const featuredImages: GalleryImage[] = [
   {
     src: "/images/ams-24-1.jpeg",
-    alt: "The Organisers",
-    caption: "The Organisers - Ramon Olaleye, iKE (BP) Onuorah & Chiedozie (Edo) Onuora",
+    alt: "AMS Team",
+    caption: "AMS Team - Ramon Olaleye, iKE (BP) Onuorah & Chiedozie (Edo) Onuora",
   },
   {
     src: "/images/omni-2.jpeg",
@@ -39,7 +39,7 @@ const featuredImages: GalleryImage[] = [
   },
   {
     src: "/images/ams-23-2.jpeg",
-    alt: "The Organisers",
+    alt: "The Team",
     caption: "iKE (BP) Onuorah, Obi Asika & Ramon Olaleye",
   },
 ];

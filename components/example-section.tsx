@@ -7,75 +7,156 @@ import Image from "next/image";
 
 function ExampleSection() {
   return (
-    <section className="py-8 sm:py-16 md:py-24 border-b border-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center mb-8 sm:mb-12 text-4xl sm:text-6xl font-extrabold">
+    <section className="py-2 sm:py-2 md:py-4 pb-7 sm:pb-16 border-b border-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-7 sm:pb-16">
+        {/* <h2 className="text-center mb-8 sm:mb-12 text-4xl sm:text-6xl font-extrabold">
           Past Events
-        </h2>
-        
+        </h2> */}
+
         <div className="text-center mb-8 sm:mb-12 space-y-2">
-          <h3 className="text-2xl sm:text-4xl font-extrabold text-purple-500">
-            THE OMNIVERSE CONFERENCE
+          <h3 className="text-2xl sm:text-4xl font-extrabold text-red-500">
+            RiKE MUSIC BUSINESS WORKSHOP & MASTERCLASS - NAIROBI, KENYA
           </h3>
-          <p className="text-xl sm:text-2xl font-bold text-purple-500">
-            25 - 28 Feb 2025
+          <p className="text-xl sm:text-2xl font-bold text-red-500">
+            6th - 8th May 2025
           </p>
         </div>
 
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <motion.div
-            className="w-full bg-slate-800 p-4 sm:p-6 shadow-xl backdrop-blur bg-transparent order-2 lg:order-1"
+            className="w-full order-2 lg:order-1 flex flex-col gap-4"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="relative w-full aspect-square">
-              <Image
-                src="/images/omni-flyer.jpeg"
-                alt="Omniverse Conference Flyer"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          </motion.div>
-
-          <div className="order-2 lg:order-2">
-            <div className=" prose prose-lg prose-invert max-w-none mt-3">
-              <p className="text-justify leading-10 sm:text-xl md:text-2xl text-slate-300 leading-relaxed sm:leading-relaxed mb-6"
-              style={{
-                lineHeight: "40px;",
-                textAlign: "justify",
-                wordSpacing: "-2px;"
-              }}
-              >
-                Shaping Africa's Infinite Future Ready to unlock infinite
-                possibilities? Join the brightest minds in African innovation,
-                creativity, and entrepreneurship at The Omniverse Summit 2025.
-                Whether you're an established leader, a budding entrepreneur, or
-                simply passionate about African innovation, this event promises an
-                enriching experience that will unveil Africa's potential. Don't
-                just watch history make it.
-              </p>
-              
-              <div className="space-y-2 mb-8">
-                <p className="text-base sm:text-xl md:text-2xl text-slate-300">
-                  <strong>Date:</strong> 25th - 28th February 2025
-                </p>
-                <p className="text-base sm:text-xl md:text-2xl text-slate-300">
-                  <strong>Location:</strong> Landmark Event Center, Victoria Island, Lagos, Nigeria
-                </p>
-                <p className="text-base sm:text-xl md:text-2xl text-slate-300">
-                  For more information and registration:
-                </p>
+            {/* First Image */}
+            <div className="w-full bg-slate-800 p-4 sm:p-6 shadow-xl backdrop-blur bg-transparent">
+              <div className="relative w-full aspect-square">
+                <Image
+                  src="/images/kenya.jpeg"
+                  alt="Omniverse Conference Flyer"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </div>
             </div>
 
-            <a hidden href="#" target="_blank" rel="noopener noreferrer">
-              <Button className="w-full sm:w-auto bg-blue-500 hover:bg-blue-800 text-lg sm:text-xl text-white font-semibold py-3 px-6 rounded-lg transition-colors">
-                CLICK HERE
-              </Button>
-            </a>
+            {/* Duplicate Image */}
+            <div className="w-full bg-slate-800 p-4 sm:p-6 shadow-xl backdrop-blur bg-transparent">
+              <div className="relative w-full aspect-square">
+                <Image
+                  src="/images/kenya3.jpeg"
+                  alt="Omniverse Conference Flyer"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          </motion.div>
+
+          <div className="order-2 lg:order-2 flex flex-col">
+            <div className="prose prose-lg prose-invert max-w-none mt-3">
+              <p
+                className="text-justify sm:text-xl md:text-2xl text-slate-300 leading-relaxed sm:leading-relaxed mb-6"
+                style={{
+                  lineHeight: "40px;",
+                  textAlign: "justify",
+                  wordSpacing: "-2px;",
+                }}
+              >
+                Strictly Entertainment Music, in partnership with RiKE, the
+                British Council Kenya, and KCB Bank, recently delivered a highly
+                successful mentorship workshop in Nairobi for the Kenyan music
+                sector. This groundbreaking initiative brought together leading
+                local and international professionals to deliver workshops and
+                masterclasses focused on best practices, monetisation, and
+                intellectual property within the music industry. Supported by
+                IFPI and as producers of the African Music Summit (AMS), we are
+                proud to align this collaboration with our shared vision for
+                empowering and upskilling music practitioners across the
+                continent.
+              </p>
+
+              <div className="space-y-2 mb-8">
+                <p
+                  className="text-justify sm:text-xl md:text-2xl text-slate-300 leading-relaxed sm:leading-relaxed mb-6"
+                  style={{
+                    lineHeight: "40px;",
+                    textAlign: "justify",
+                    wordSpacing: "-2px;",
+                  }}
+                >
+                  The programme provided invaluable insights and practical tools
+                  to Kenyan music professionals, fostering a spirit of
+                  innovation, collaboration, and professional growth. We are
+                  honoured to have worked closely with our partners to deliver
+                  this important initiative and look forward to further
+                  engagement with the Kenyan music community.
+                </p>
+                {/* <p
+                  className="text-justify sm:text-xl md:text-2xl text-slate-300 leading-relaxed sm:leading-relaxed mb-6"
+                  style={{
+                    lineHeight: "40px;",
+                    textAlign: "justify",
+                    wordSpacing: "-2px;",
+                  }}
+                >
+                  "As Team
+                  <strong> SEM & AMS</strong>, we are honoured to work closely
+                  with RiKE, the British Council Kenya, KCB, and IFPI Africa to
+                  deliver this important initiative, and we look forward to
+                  engaging with Kenyan music professionals on ground in Nairobi
+                  very soon."
+                </p> */}
+                {/* <p
+                  className="text-justify sm:text-xl md:text-2xl text-slate-300 leading-relaxed sm:leading-relaxed mb-6"
+                  style={{
+                    lineHeight: "40px;",
+                    textAlign: "justify",
+                    wordSpacing: "-2px;",
+                  }}
+                >
+                  For further details, please visit www.africanmusicsummit.com
+                </p> */}
+              </div>
+            </div>
+
+            <div className="text-center mb-1 sm:mt-16 mt-5 sm:mb-6 space-y-2">
+              <h3 className="text-2xl sm:text-3xl font-extrabold">
+                RiKE WORKSHOP & CULTURAL EXCHANGE
+              </h3>
+            </div>
+
+            {/* Four image grid beneath the text */}
+            <div className="grid grid-cols-2 gap-4 mt-1">
+              {/* Image 1 */}
+              <div className="bg-slate-800 p-3 shadow-xl backdrop-blur bg-transparent">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/kenya2.jpeg"
+                    alt="RIKE Workshop Image"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                </div>
+              </div>
+
+              {/* Image 2 */}
+              <div className="bg-slate-800 p-3 shadow-xl backdrop-blur bg-transparent">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/kenya4.jpeg"
+                    alt="RIKE Workshop Image"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

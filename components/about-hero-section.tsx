@@ -19,12 +19,12 @@ export function AboutHeroSection() {
 
         {/* Description Section */}
         <div className="w-full max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">
-          <p className="text-justify leading-10 sm:text-lg md:text-xl lg:text-2xl text-slate-300 mb-10 max-w-5xl mx-auto font-bold"
-           style={{
-            lineHeight: "40px;",
-            textAlign: "justify",
-            wordSpacing: "-2px;"
-          }}
+        <p 
+                className="text-justify text-xl md:text-2xl text-slate-300 leading-relaxed mb-6"
+                style={{
+                  lineHeight: "1.8",
+                  textAlign: "justify"
+                }}
         >
             The African Music Summit, initially known as The Afrobeats
             Educational Roadshow (TAER), has evolved into a unique gathering
