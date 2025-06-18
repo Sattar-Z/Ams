@@ -7,6 +7,7 @@ import { HeroSection } from "@/components/hero-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import SiteFooter from "@/components/site-footer";
 import GalleryHomeSection from "@/components/gallery-home-section";
+import GetInvolvedSection from "@/components/nafest-sponsorship-section";
 import NafestSection from "@/components/nafest-section";
 import GalleryHome2Section from "@/components/gallery-home2-section";
 import GalleryHome3Section from "@/components/gallery-home3-section";
@@ -56,6 +57,7 @@ export default function Component() {
         <main>
           <HeroSection />
           <NafestSection/>
+          <GetInvolvedSection/>
           <AfrobeatsSection/>
           <AMSExpectations />
           <GalleryHome5Section/>

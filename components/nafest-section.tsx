@@ -54,7 +54,7 @@ function NafestSection() {
                 The National Festival of Arts & Culture (NAFEST) is the flagship programme of the National Council for Arts and Culture (NCAC) and one of Nigeria's most significant cultural festivals. NAFEST serves as a powerful platform for bringing together stakeholders in the arts and culture sector, offering opportunities to interact, showcase talent, and celebrate the values of our heritage.
               </p>
               <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed text-justify">
-                As NCAC rebrands NAFEST to be more relevant and impactful, the festival is set to become the biggest cultural event in Nigeria, partnering with government, the private sector, and the global community to deliver a renewed and vibrant experience.
+                As NCAC rebrands NAFEST to be more relevant and impactful, the festival is set to become the biggest cultural event in Nigeria, partnering with government, the private sector, and the global community to deliver a renewed and vibrant experience. <span>Find out more about <a href="http://www.ncac.gov.ng" className="text-yellow-400 hover:underline">NAFEST</a></span>
               </p>
             </div>
           </motion.div>
@@ -69,11 +69,11 @@ function NafestSection() {
             {/* Partnership Info */}
             <div className="prose prose-lg prose-invert max-w-none">
               <p className="text-base sm:text-lg lg:text-xl text-slate-200 leading-relaxed mb-6 text-justify">
-                <strong className="text-yellow-400">
+                <strong className="text-slate-200">
                   Strictly Entertainment Music (SEM)
                 </strong>{" "}
                 and the{" "}
-                <strong className="text-yellow-400">
+                <strong className="text-slate-200">
                   African Music Summit (AMS)
                 </strong>{" "}
                 are proud to partner with the{" "}
@@ -85,7 +85,7 @@ function NafestSection() {
 
               <p className="text-base sm:text-lg lg:text-xl text-slate-200 leading-relaxed mb-6 text-justify">
                 This year's one week festival, themed{" "}
-                <strong className="text-red-400">"Connected Culture"</strong>, will feature a dynamic{" "}
+                <strong className="text-yellow-700">"Connected Culture"</strong>, will feature a dynamic{" "}
                 <strong className="text-red-400">three-day African Music Summit programme</strong>{" "}
                 designed to empower talent, inspire industry growth, and showcase the South-East as the next vibrant hub for music and creativity from Nigeria/Africa.
               </p>
@@ -128,7 +128,7 @@ function NafestSection() {
                 Programme Details Coming Soon
               </h4>
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed mb-4 text-justify">
-                Further announcements—including the full schedule of workshops, masterclasses, songwriting and recording camps, and the list of facilitators—will be released in August 2025.
+                Further announcements including the full schedule of workshops, masterclasses, songwriting and recording camps, and the list of facilitators will be released in August 2025.
               </p>
               <p className="text-lg font-bold text-yellow-400 text-center">
                 Stay tuned for updates!
@@ -146,7 +146,7 @@ function NafestSection() {
         >
           <div className="bg-slate-800/30 p-6 sm:p-8 rounded-xl backdrop-blur-sm border border-slate-700/30">
             <h4 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-6 text-center">
-              Meet the Organizers
+              AMS Team and OBI
             </h4>
             <div
               className="relative w-full max-w-2xl mx-auto"
@@ -172,11 +172,6 @@ function NafestSection() {
                   @amusicsummit
                 </span>
               </p>
-              <div className="flex justify-center space-x-4 text-sm text-slate-300">
-                <span>Find out more: <a href="http://www.ncac.gov.ng" className="text-yellow-400 hover:underline">www.ncac.gov.ng</a></span>
-                <span>•</span>
-                <span><a href="http://www.africanmusicsummit.com" className="text-yellow-400 hover:underline">www.africanmusicsummit.com</a></span>
-              </div>
             </div>
           </div>
         </motion.div>
