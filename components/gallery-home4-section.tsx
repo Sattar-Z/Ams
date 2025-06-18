@@ -62,7 +62,7 @@ export function GalleryHome4Section() {
     <div>
       <div className="container mx-auto px-4 py-1 mt-28 md:py-2">
         {/* Header Section */}
-        <motion.div
+        {/* <motion.div
           className="flex flex-col items-center gap-6 mb-6 md:mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -72,7 +72,7 @@ export function GalleryHome4Section() {
           <h2 className="text-center uppercase mb-16 text-4xl sm:text-6xl font-extrabold">
             Looking Back at Past AMS Events
           </h2>
-        </motion.div>
+        </motion.div> */}
 
         <div className="text-center mb-8">
           <span className="inline-block px-4 py-2 text-lg sm:text-3xl font-extrabold text-slate-300 backdrop-blur-sm">

@@ -11,10 +11,10 @@ function NafestSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-7 sm:pb-16">
         {/* Event Header */}
         <div className="text-center mb-8 sm:mb-12 space-y-2">
-          <h3 className="text-2xl sm:text-4xl font-extrabold text-red-500">
+          <h3 className="text-2xl sm:text-4xl font-extrabold text-yellow-600">
             AFRICAN MUSIC SUMMIT AT NAFEST 2025 – ENUGU, NIGERIA
           </h3>
-          <p className="text-xl sm:text-2xl font-bold text-red-500">
+          <p className="text-xl sm:text-2xl font-bold text-yellow-600">
             22–29 November 2025
           </p>
         </div>
@@ -54,7 +54,7 @@ function NafestSection() {
                 The National Festival of Arts & Culture (NAFEST) is the flagship programme of the National Council for Arts and Culture (NCAC) and one of Nigeria's most significant cultural festivals. NAFEST serves as a powerful platform for bringing together stakeholders in the arts and culture sector, offering opportunities to interact, showcase talent, and celebrate the values of our heritage.
               </p>
               <p className="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed text-justify">
-                As NCAC rebrands NAFEST to be more relevant and impactful, the festival is set to become the biggest cultural event in Nigeria, partnering with government, the private sector, and the global community to deliver a renewed and vibrant experience. <span>Find out more about <a href="http://www.ncac.gov.ng" className="text-yellow-400 hover:underline">NAFEST</a></span>
+                As NCAC rebrands NAFEST to be more relevant and impactful, the festival is set to become the biggest cultural event in Nigeria, partnering with government, the private sector, and the global community to deliver a renewed and vibrant experience.<br/> <span>Find out more about <a href="http://www.ncac.gov.ng" target="_black" className="text-yellow-400 hover:underline">NAFEST</a></span>
               </p>
             </div>
           </motion.div>
@@ -86,7 +86,7 @@ function NafestSection() {
               <p className="text-base sm:text-lg lg:text-xl text-slate-200 leading-relaxed mb-6 text-justify">
                 This year's one week festival, themed{" "}
                 <strong className="text-yellow-700">"Connected Culture"</strong>, will feature a dynamic{" "}
-                <strong className="text-red-400">three-day African Music Summit programme</strong>{" "}
+                <strong className="text-yellow-700">three-day African Music Summit programme</strong>{" "}
                 designed to empower talent, inspire industry growth, and showcase the South-East as the next vibrant hub for music and creativity from Nigeria/Africa.
               </p>
             </div>
@@ -165,12 +165,6 @@ function NafestSection() {
             <div className="text-center mt-6 space-y-2">
               <p className="text-lg sm:text-xl lg:text-2xl font-bold text-red-400">
                 Save the Date: NAFEST 2025 | ENUGU | 22–29 November
-              </p>
-              <p className="text-sm sm:text-base text-slate-300">
-                Follow us on X, IG & FB:{" "}
-                <span className="text-yellow-400 font-semibold">
-                  @amusicsummit
-                </span>
               </p>
             </div>
           </div>

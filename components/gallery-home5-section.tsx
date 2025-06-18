@@ -13,35 +13,35 @@ interface GalleryImage {
 
 const featuredImages: GalleryImage[] = [
   {
-    src: "/images/omni25/1.jpeg",
+    src: "/images/rike/6.jpeg",
     alt: "AMS Team",
     caption:
       "AMS Team - Chiedozie (Edo) Onuora, iKE (BP) Onuorah & Ramon Olaleye",
   },
   {
-    src: "/images/omni25/2.jpeg",
+    src: "/images/rike/2.jpeg",
     alt: "Panel: The Role of the Nigerian Government in Strengthening the Creative Economy",
     caption:
       "The Role of the Nigerian Government in Strengthening the Creative Economy: Policies, Support and Opportunities",
   },
   {
-    src: "/images/omni25/3.jpeg",
+    src: "/images/rike/3.jpeg",
     alt: "Round Table: Discussion",
     caption: "Nigerian Music Business Round Table: Discussion",
   },
   {
-    src: "/images/omni25/11.jpeg",
+    src: "/images/rike/4.jpeg",
     alt: "The Omniverse 2025 Main Stage",
     caption: "The Omniverse 2025 Main Stage - Dragon's Den",
   },
   {
-    src: "/images/omni25/5.jpeg",
+    src: "/images/rike/5.jpeg",
     alt: "Reception: Omniverse 2025",
     caption:
       "Reception: Omniverse 2025 networking hosted at the UN Office Lagos",
   },
   {
-    src: "/images/omni25/6.jpeg",
+    src: "/images/rike/1.jpeg",
     alt: "The Team",
     caption: "Strictly entertainment team with Obi Asika",
   },
@@ -82,7 +82,7 @@ export function GalleryHome5Section() {
             2025
           </span>
         </div>
-        <div className="relative w-full aspect-video max-w-8xl mx-auto">
+        {/* <div className="relative w-full aspect-video max-w-8xl mx-auto">
           <video
             className="absolute inset-0 w-full h-full rounded-xl"
             controls
@@ -100,7 +100,7 @@ export function GalleryHome5Section() {
         >
           The Role of the Nigerian Government in Strengthening the Creative
           Economy: Policies, Support and Opportunities
-        </h3>
+        </h3> */}
 
         {/* Featured Images Section */}
         <motion.div
